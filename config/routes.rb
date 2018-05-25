@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/chart'
+
   root 'houses#index'
   resources :houses
   resources :energies
