@@ -1,8 +1,17 @@
 <p id="notice"><%= notice %></p>
 
+<%= bar_chart @data_for_bar_chart %>
+
+<%= column_chart(
+  @data_for_multiple_culumn_chart,
+  title: "Regional average energy production by number of family members",
+  xtitle: "Num of Family Menbers",
+  ytitle: "Average Energy Production",
+  ) %>
+
 <h1>Houses</h1>
 
-<table>
+<table class="table table-bordered table-striped table-condensed">
   <thead>
     <tr>
       <th>Firstname</th>
@@ -32,4 +41,4 @@
 
 <br>
 
-<%= link_to 'New House', new_house_path %>
+<%= link_to 'New House', new_house_path, class: "btn btn-default" %>
