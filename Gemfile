@@ -57,3 +57,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Use heroku
 gem 'rails_12factor', group: :production
+# Display charts
+gem 'chartkick'
